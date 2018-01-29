@@ -25,3 +25,4 @@ features[field_instance][] = bean-hero-field_hero_caption_position
 features[field_instance][] = bean-hero-field_hero_image
 features[field_instance][] = bean-hero-field_hero_text_size
 features[field_instance][] = bean-hero-field_hero_url
+features[user_permission][] = view any hero bean
