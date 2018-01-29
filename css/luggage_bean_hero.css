@@ -1,0 +1,92 @@
+/* 
+ * CSS for luggage_bean_hero
+ */
+
+.bean-hero {
+  width: 100%;
+  position: relative;
+}
+
+.bean-hero_image {
+  width: 100%;
+}
+
+.bean-hero_caption {
+  display: flex;
+  width: 92%;
+  max-width: 1200px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding: 0 1%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+a.bean-hero_link { text-decoration: none; }
+
+a.bean-hero_link:hover,
+a.bean-hero_link:focus { box-shadow: 0 0 3px 3px white !important; }
+
+.bean-hero .fa { margin-right: 1rem; }
+
+.bean-hero_label {
+  margin-bottom: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+/* Position */
+.bean-hero_right .bean-hero_caption {
+  justify-content: flex-end;
+  align-items: flex-start;
+  top: 1rem;
+}
+
+.bean-hero_center .bean-hero_caption {
+  justify-content: center;
+  align-items: center;
+}
+
+.bean-hero_bottom .bean-hero_caption {
+  justify-content: center;
+  align-items: flex-end;
+  top: 1rem;
+}
+
+/* Color */
+.bean-hero_overlay .bean-hero_label { background: rgba(0, 0, 0, 0.75); }
+.bean-hero_red .bean-hero_label { background: #cc0000; }
+.bean-hero_blue .bean-hero_label { background: #006ba6; }
+.bean-hero_green .bean-hero_label { background: #76881d; }
+.bean-hero_dark-red .bean-hero_label { background: #7c2529; }
+.bean-hero_dark-blue .bean-hero_label { background: #003D4C; }
+.bean-hero_dark-green .bean-hero_label { background: #3E4827; }
+
+/* Text Size */
+
+.bean-hero_text-sm p { font-size: 1em }
+.bean-hero_text-md p { font-size: 1.5em; }
+.bean-hero_text-lg p { font-size: 1.75em; }
+.bean-hero_text-sm .fa { margin-right: 0.5rem; }
+.bean-hero_text-md .fa { margin-right: 1rem; }
+
+
+/* Kill external link icon */
+#section-content .bean-hero a.external:after { display: none; }
+
+@media (max-width: 600px) {
+  .bean-hero_caption { 
+    position: static; 
+    display: block; 
+    width: 100%;
+    padding: 0;
+  }
+  .bean-hero_label { font-size: 1rem !important; }
+  .bean-hero .fa { margin-right: 0.5rem; }
+}

@@ -1,0 +1,47 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_bean_hero feature.
+ */
+
+include_once 'luggage_bean_hero.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function luggage_bean_hero_theme($existing, $type, $theme, $path) {
+  $themes['bean__hero'] = array(
+    'template' => 'bean--hero',
+    'path' => drupal_get_path('module', 'luggage_bean_hero') . '/templates'
+  );
+
+  return $themes;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function luggage_bean_hero_form_bean_form_alter(&$form, &$form_state, $form_id) {
+  if($form['#bundle'] == "hero") {
+    // Hide default bean type field since it's confusing and editor won't change it.
+    $form['view_mode'] = array(
+      '#type' => 'hidden',
+    );
+    //Add better description to label
+    $form['label']['#description'] = t('This text will be used to name your hero. Users of your site will not see this.');
+    //Add better description to title
+    $form['title']['#description'] = t('This text will be what users see on your hero. The &lt;em&gt;, &lt;strong&gt;, &lt;i&gt; and &lt;b&gt; HTML tags are allowed, all others will be filtered out.');
+  }
+  drupal_add_js(drupal_get_path('module', 'luggage_bean_hero') . '/js/luggage_bean_hero.js');
+}
+
+/*
+ * Implements hook_preprocess_html.
+ */
+function luggage_bean_hero_preprocess_html(&$vars) {
+  // Override suitcase_interim styles for this site.
+  global $theme;
+  if ($theme == 'suitcase_interim') {
+    drupal_add_css(drupal_get_path('module', 'luggage_bean_hero') . '/css/luggage_bean_hero.css', array('group' => 200));
+  }
+}
