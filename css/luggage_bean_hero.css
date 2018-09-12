@@ -67,6 +67,8 @@ a.bean-hero_link:focus { box-shadow: 0 0 3px 3px white !important; }
 .bean-hero_dark-red .bean-hero_label { background: #7c2529; }
 .bean-hero_dark-blue .bean-hero_label { background: #003D4C; }
 .bean-hero_dark-green .bean-hero_label { background: #3E4827; }
+.bean-hero_brown .bean-hero_label { background: #8b5b29; }
+.bean-hero_grey .bean-hero_label { background: #707372; }
 
 /* Text Size */
 

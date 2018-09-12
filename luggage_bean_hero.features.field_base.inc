@@ -33,6 +33,8 @@ function luggage_bean_hero_field_default_field_bases() {
         'bean-hero_dark-red' => 'Dark Red Caption',
         'bean-hero_dark-blue' => 'Dark Blue Caption',
         'bean-hero_dark-green' => 'Dark Green Caption',
+        'bean-hero_brown' => 'Brown Label',
+        'bean-hero_grey' => 'Grey Label',
       ),
       'allowed_values_function' => '',
     ),
