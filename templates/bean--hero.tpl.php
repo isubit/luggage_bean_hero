@@ -1,5 +1,7 @@
 <div class="bean-hero <?php print $bean->field_hero_caption_position['und'][0]['value'] ?> <?php print $bean->field_hero_caption_color['und'][0]['value'] ?> <?php print $bean->field_hero_text_size['und'][0]['value'] ?>" <?php print $attributes; ?>>
 
+  <?php print render($title_suffix) ?>
+
   <img class="bean-hero_image" src="<?php print file_create_url($bean->field_hero_image['und'][0]['uri']); ?>" alt="<?php print $bean->field_hero_image['und'][0]['alt']; ?>">
 
   <div class="bean-hero_caption">
