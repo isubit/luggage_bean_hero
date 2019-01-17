@@ -1,6 +1,7 @@
 name = luggage_bean_hero
 description = Creates banners with captions
 core = 7.x
+version = 1.0
 package = Luggage
 dependencies[] = bean
 dependencies[] = bean_admin_ui
