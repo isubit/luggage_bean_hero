@@ -63,7 +63,7 @@ a.bean-hero_link:focus { box-shadow: 0 0 3px 3px white !important; }
 .bean-hero_overlay .bean-hero_label { background: rgba(0, 0, 0, 0.75); }
 .bean-hero_red .bean-hero_label { background: #cc0000; }
 .bean-hero_blue .bean-hero_label { background: #006ba6; }
-.bean-hero_green .bean-hero_label { background: #76881d; }
+.bean-hero_green .bean-hero_label { background: #6A7A1A; }
 .bean-hero_dark-red .bean-hero_label { background: #7c2529; }
 .bean-hero_dark-blue .bean-hero_label { background: #003D4C; }
 .bean-hero_dark-green .bean-hero_label { background: #3E4827; }
